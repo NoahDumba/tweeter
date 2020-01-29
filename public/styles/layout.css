@@ -15,9 +15,68 @@ html {
  */
 
 body {
-  color: #545149;
-  background-color: #f4f1ec;
-  font-size: 24px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+  background-color: beige;
+}
+
+main {
+  margin: auto;
+  width: 90%;
+  height: 200vh;
+  background-color: beige;
+}
+
+.tweet-container {
+  font-weight: 300;
+  display: flex;
+  flex-direction: column;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+  margin-bottom: 25px;
+}
+
+.tweet-container header {
+  font-size: larger;
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+}
+
+#profile-pic {
+  height: 3em;
+  padding-right: 0.5em;
+}
+
+.username {
+  visibility: hidden;
+  flex: 1;
+  text-align: right;
+  color: darkgray;
+}
+
+#tweet {
+  padding-left: 40px;
+}
+
+#line {
+  width: 96%;
+  height: 2px;
+  background: black;
+  border: none;
+}
+
+.tweet-container footer {
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-start;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 5px;
 }
 
 /*

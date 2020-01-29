@@ -1,0 +1,13 @@
+.main-header {
+  margin-top: 90px;
+  padding-top: 2em;
+  background-color: navy;
+  background-image: url("../images/black-felt.png");
+  text-align: center;
+  height: 400px;
+  width: 100%;
+}
+
+#screen-name{
+  color: white;
+}
