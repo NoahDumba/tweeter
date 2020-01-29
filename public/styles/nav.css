@@ -4,6 +4,7 @@ nav {
   position: fixed;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   height: 90px;
   width: 100%;
   z-index: 100;
@@ -13,4 +14,9 @@ nav {
 }
 nav span {
   font-size: 40px;
+}
+
+.nav-buttons {
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: inherit;
 }

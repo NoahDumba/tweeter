@@ -1,5 +1,4 @@
 $(document).ready(function() {
-  
   $(".tweet-container").hover(function(){
     $(this).css("font-weight", "600");
     $(this).find("p.username").css("visibility", "visible");

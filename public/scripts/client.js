@@ -30,6 +30,13 @@ const data = [
   }
 ]
 
+const escape =  function(str) {
+  let div = document.createElement('div');
+  div.appendChild(document.createTextNode(str));
+  console.log(div.innerHTML);
+  return div.innerHTML;
+}
+
 const createTweetElement = function(tweetData) {
   const oneDay = 24 * 60 * 60 * 1000;
   const tweetDate = new Date(tweetData["created_at"]);
@@ -43,7 +50,7 @@ const createTweetElement = function(tweetData) {
       <p id="name">${tweetData["user"]["name"]}</p>
       <p class="username">${tweetData["user"]["handle"]}</p>
     </header>
-    <span id="tweet">${tweetData["content"]["text"]}</span>
+    <span id="tweet">${escape(tweetData["content"]["text"])}</span>
     <hr id="line" />
     <footer>
         <span id="date">${diffDays} days ago</span>
@@ -54,11 +61,13 @@ const createTweetElement = function(tweetData) {
 }
 
 const renderTweets = function(tweets) {
+  $('.container').empty();
   for (let tweet of tweets) {
-    $('.container').append(createTweetElement(tweet));
+    $('.container').prepend(createTweetElement(tweet));
   }
 }
 
-$(document).ready(function() {
-  renderTweets(data);
+jQuery(function($) {
+  $('form').on('submit', postTweet);
+  loadTweets();
 });
