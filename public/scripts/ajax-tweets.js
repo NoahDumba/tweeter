@@ -18,6 +18,7 @@ const postTweet = function(event) {
       method: "POST",
       data : $data
     }).then(function () {
+      $(".textarea").val('');
       loadTweets();
     });
   }
