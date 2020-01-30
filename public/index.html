@@ -36,9 +36,6 @@
 
     <!-- ComposeTweetButton JS-->
     <script type="text/javascript" src="/scripts/toggle-slider.js"></script>
-
-    <!-- TweetHover JS
-    <script type="text/javascript" src="/scripts/tweet-hover.js"></script> -->
   </head>
 
   <body>
@@ -65,6 +62,8 @@
     <!-- Page-specific (main) content here -->
     <main>
     <section class="new-tweet">
+      <span class="not-valid" id="empty-field">You gotta write something!</span>
+      <span class="not-valid" id="over-max">Tweet cant be over 140 characters!</span>
       <form action="/tweets" method="POST">
         <textarea class="textarea" name="text" placeholder="What are you humming about?"></textarea>
         <div>

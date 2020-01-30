@@ -2,11 +2,17 @@ const postTweet = function(event) {
   event.preventDefault();
   const $data = $(this).serialize();
 
+
+
   if ($data === "text=") {
-    alert("You gotta write something");
+    $(".new-tweet").find("#empty-field").slideDown();
+    $(".new-tweet").find("#over-max").slideUp();
   } else if ($data.length > 145) {
-    alert("Over 140 characters");
+    $(".new-tweet").find("#over-max").slideDown();
+    $(".new-tweet").find("#empty-field").slideUp();
   } else {
+    $(".new-tweet").find("#over-max").slideUp();
+    $(".new-tweet").find("#empty-field").slideUp();
     $.ajax({
       url: "/tweets",
       method: "POST",

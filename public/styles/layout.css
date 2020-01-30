@@ -27,6 +27,28 @@ main {
   background-color: beige;
 }
 
+.new-tweet {
+  display: flex;
+  flex-direction: column;
+}
+
+.not-valid {
+  display: flex;
+  display: none;
+  align-items: flex-start;
+  align-self: flex-start;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 2em;
+  font-weight: 300;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-style: solid;
+  border-width: 4px;
+  border-color: red;
+  color: red;
+  margin-bottom: 40px;
+}
+
 .tweet-container {
   font-weight: 300;
   display: flex;
@@ -61,11 +83,11 @@ main {
 }
 
 #tweet {
-  padding-left: 40px;
+  padding-left: 35px;
 }
 
 #line {
-  width: 96%;
+  width: 97%;
   height: 2px;
   background: black;
   border: none;
@@ -75,13 +97,12 @@ main {
   display: flex;
   justify-content: space-between;
   align-content: flex-start;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 35px;
+  padding-right: 35px;
   padding-bottom: 5px;
 }
 
 article:hover {
-
   font-weight: 700;
   box-shadow: 5px 10px #86a1bb;
 }
