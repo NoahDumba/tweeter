@@ -18,5 +18,7 @@ This repository is the starter code for the project: Students will fork and clon
 
 ## Screenshots
 
+Desktop version
 !["Screenshot of desktop version"](https://github.com/NoahDumba/tweeter/blob/master/docs/desktop-tweeter.png?raw=true)
+Mobile version
 !["Screenshot of mobile version"](https://github.com/NoahDumba/tweeter/blob/master/docs/mobile-tweeter.png?raw=true)
