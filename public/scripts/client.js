@@ -53,7 +53,9 @@ const createTweetElement = function(tweetData) {
     <hr id="line" />
     <footer>
         <span id="date">${diffDays} days ago</span>
-        <span id="icons">somehow get those lil icons</span>
+        <span class="icons">
+        <img src="/images/flag.png" id="flag-img"><img src="/images/retweet.png" id="rt-img"><img src="/images/like.png" id="like-img">
+        </span>
       </footer>
   </article>`
   return tweet;
