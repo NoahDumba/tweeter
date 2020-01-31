@@ -15,3 +15,8 @@ This repository is the starter code for the project: Students will fork and clon
 
 - Express
 - Node 5.10.x or above
+
+## Screenshots
+
+!["Screenshot of desktop version"](https://github.com/NoahDumba/tweeter/blob/master/docs/desktop-tweeter.png?raw=true)
+!["Screenshot of mobile version"](https://github.com/NoahDumba/tweeter/blob/master/docs/mobile-tweeter.png?raw=true)
