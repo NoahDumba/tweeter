@@ -19,6 +19,7 @@ const postTweet = function(event) {
       data : $data
     }).then(function () {
       $(".textarea").val('');
+      $(".counter").replaceWith('<span class="counter">' + 140 + '</span>');
       loadTweets();
     });
   }

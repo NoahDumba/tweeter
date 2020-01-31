@@ -30,6 +30,9 @@
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
 
+    <!-- NewTweetTemplate JS-->
+    <script type="text/javascript" src="/scripts/template.js"></script>
+
     <!-- CompCharCount JS -->
     <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
 
@@ -67,7 +70,7 @@
       <span class="not-valid" id="empty-field">You gotta write something!</span>
       <span class="not-valid" id="over-max">Tweet cant be over 140 characters!</span>
       <form action="/tweets" method="POST">
-        <textarea class="textarea" name="text" placeholder="What are you humming about?" autofocus></textarea>
+        <textarea class="textarea" name="text" placeholder="What are you humming about?"></textarea>
         <div>
           <input type="submit" value="Tweet">
           <span class="counter">140</span>
